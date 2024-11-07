@@ -1,0 +1,49 @@
+user{
+    id
+    name varchar(255)
+    email varchar(255)
+    password text
+    profile text
+}
+
+logo{
+    id 
+    thmubnail text
+    status (header, footer) char(10)
+}
+
+news{
+    id
+    author_id   (int)
+    banner text
+    thumbnail text
+    title varchar(255)
+    description  text
+    create_at(date,datetime)
+    category char30
+    type char30
+    view int
+}
+
+description{
+    id
+    description text
+
+}
+
+follow_us{
+    id
+    icon text
+    label char30
+    url text
+}
+
+feedback{
+    id
+    username varchar255
+    email varchar255
+    telephone varchar255
+    address varchar255
+    message varchar255
+    create_at (date,datetime)
+}
